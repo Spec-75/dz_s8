@@ -9,11 +9,12 @@
 // наименьшей суммой элементов: 1 строка
 
 
-int rows = 3;
-int columns = 3;
+Console.WriteLine("enter the dimension of the array: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("source array");
 int minSum = int.MaxValue;
 int temp = 0;
-int[,] matrix = new int[rows, columns];
+int[,] matrix = new int[n, n];
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
     int sum = 0;

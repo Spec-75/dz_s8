@@ -21,7 +21,7 @@ for (int i = 0; i < n; i++)
     for (int j = 0; j < n; j++)
     {
         matrix[i, j] = new Random().Next(-1, 10);
-        sortMatrix[i, j] = matrix[i, j];        
+        sortMatrix[i, j] = matrix[i, j];
         Console.Write(matrix[i, j] + "\t");
     }
     Console.WriteLine();
@@ -32,12 +32,12 @@ Console.WriteLine("sorted array: ");
 for (int i = 0; i < n; i++)
 {
     for (int j = 0; j < n; j++)
-    bufer[j] = sortMatrix[i, j];
+        bufer[j] = sortMatrix[i, j];
     Array.Sort(bufer);
     for (int k = 0; k < n; k++)
     {
         sortMatrix[i, k] = bufer[k];
-        Console.Write(sortMatrix[i, k]  + "\t");
+        Console.Write(sortMatrix[i, k] + "\t");
     }
     Console.WriteLine();
 }
